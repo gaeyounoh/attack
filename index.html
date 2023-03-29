@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>공성 서신 생성기</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>공성 서신 생성기</h1>
+        <form onsubmit="return false">
+            <div class="form-group">
+                <label for="dateChoice">날짜 선택:</label>
+                <input type="date" id="dateChoice" name="dateChoice">
+            </div>
+            <div class="form-group">
+                <label for="timeChoice">시간 입력 (HH:MM):</label>
+                <input type="time" id="timeChoice" name="timeChoice">
+            </div>
+            <div class="form-group">
+                <label for="startCity">공성 도시:</label>
+                <input type="text" id="startCity" name="startCity">
+            </div>
+            <div class="form-group">
+                <label for="endCity">재배치 도시:</label>
+                <input type="text" id="endCity" name="endCity">
+            </div>
+            <div class="form-group">
+                <label for="participants">참여 인원:</label>
+                <input type="text" id="participants" name="participants">
+            </div>
+            <div class="form-group">
+                <label for="objective">목적:</label>
+                <input type="text" id="objective" name="objective">
+            </div>
+            <button id="generateButton">서신 생성</button>
+            <button id="copyButton">복사</button>
+        </form>
+        <div>
+            <label for="resultText">결과:</label>
+            <textarea id="resultText" rows="12" readonly></textarea>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
