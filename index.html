@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공성 서신 생성기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>공성 서신 생성기</h1>
+        <!-- 입력 필드, 드롭다운 메뉴, 버튼 등의 HTML 요소 -->
+        <form id="inputForm">
+            <!-- 날짜 선택 -->
+            <label for="dateChoice">날짜 선택:</label>
+            <input type="date" id="dateChoice" required>
+            
+            <!-- 시간 입력 -->
+            <label for="timeChoice">시간 입력 (HH:MM):</label>
+            <input type="time" id="timeChoice" required>
+
+            <!-- 시작 도시 선택 -->
+            <label for="startCity">공성 도시:</label>
+            <input type="text" id="startCity" required>
+
+            <!-- 종료 도시 선택 -->
+            <label for="endCity">재배치 도시:</label>
+            <input type="text" id="endCity" required>
+
+            <!-- 참여 인원 입력 -->
+            <label for="participants">참여 인원:</label>
+            <input type="text" id="participants" required>
+
+            <!-- 목적 입력 -->
+            <label for="objective">목적:</label>
+            <input type="text" id="objective" required>
+            
+            <button type="submit" id="generateButton">서신 생성</button>
+        </form>
+        <button id="copyButton">복사</button>
+        <textarea id="resultText" readonly></textarea>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
